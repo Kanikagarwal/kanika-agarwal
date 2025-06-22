@@ -1,5 +1,5 @@
 import React from 'react'
-import Technology from '../Components/technology'
+import Technology from '../Components/Technology'
 
 function Skills() {
   return (
