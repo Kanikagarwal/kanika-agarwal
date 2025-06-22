@@ -41,6 +41,7 @@ const Projects = () => {
             t4="Socket.io"
             t5="Reactjs"
             code="https://github.com/Kanikagarwal/snappy"
+            demo="https://github.com/Kanikagarwal/snappy"
           />
           <Project
             name="Daily Journal"
@@ -53,6 +54,7 @@ const Projects = () => {
             t4="EJS"
             t5="Bootstrap"
             code="https://github.com/Kanikagarwal/daily_journal"
+            demo="https://github.com/Kanikagarwal/daily_journal"
           />
           <Project
             name="Solar System"
@@ -88,10 +90,11 @@ const Projects = () => {
             t4="MongoDB"
             t5="Nodejs"
             code="https://github.com/Kanikagarwal/PlanIt"
+            demo="https://github.com/Kanikagarwal/PlanIt"
           />
         </div>
         <div className="text-center mx-auto my-6">
-          <a href="" className="text-gray-500 hover:text-green-500">
+          <a href="https://github.com/Kanikagarwal?tab=repositories" target="_blank" className="text-gray-500 hover:text-green-500">
             Visit more...
           </a>
         </div>
