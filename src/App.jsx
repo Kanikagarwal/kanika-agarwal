@@ -6,17 +6,24 @@ import Skills from "./Sections/Skills";
 import Projects from "./Sections/Projects";
 import Contact from "./Sections/Contact";
 import Footer from "./Sections/Footer";
+import AnimatedSection from "./Sections/AnimatedSection";
+import Navbar from "./Sections/Navbar";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Navbar/>
+       <AnimatedSection><Hero /></AnimatedSection> 
+       <AnimatedSection><About /></AnimatedSection> 
+       <AnimatedSection><Skills /></AnimatedSection> 
+       <AnimatedSection><Projects /></AnimatedSection> 
+       <AnimatedSection><Contact /></AnimatedSection> 
+        
+        
+        
+        
       </main>
       <Footer />
     </>

@@ -1,54 +1,48 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import "../App.css"; // Make sure to import your custom CSS
 
-const Technology = ({ name, s1,s2,s3,s4,s5,s6,p1,p2,p3,p4,p5,p6,p7,p8 }) => {
+const Technology = ({ name, s1, s2, s3, s4, s5, s6, p1, p2, p3, p4, p5, p6 }) => {
+  const ref = useRef();
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setAnimate(entry.isIntersecting),
+      { threshold: 0.4 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  const progressClass = animate ? "progress-fill animate" : "progress-fill";
+
   return (
-    <div className="border border-gray-800 rounded-xl bg-gray-900/50 backdrop-blur-sm p-8 mt-10">
+    <div
+      ref={ref}
+      className="border border-gray-800 rounded-xl bg-gray-900/50 backdrop-blur-sm p-8 mt-10"
+    >
       <h2 className="text-center text-green-400 font-semibold text-xl font-bold mt-2">
         {name}
       </h2>
       <div className="flex flex-col my-8">
-        <div className="flex justify-between items-center">
-          <p>{s1}</p>
-          <p className="text-green-400 font-normal">{p1}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p1}}></div>
-        </div>
-        <div className="flex justify-between items-center">
-          <p>{s2}</p>
-          <p className="text-green-400 font-normal">{p2}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p2}}></div>
-        </div>
-        <div className="flex justify-between items-center">
-          <p>{s3}</p>
-          <p className="text-green-400 font-normal">{p3}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p3}}></div>
-        </div>
-        <div className="flex justify-between items-center">
-          <p>{s4}</p>
-          <p className="text-green-400 font-normal">{p4}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p4}}></div>
-        </div>
-        <div className="flex justify-between items-center">
-          <p>{s5}</p>
-          <p className="text-green-400 font-normal">{p5}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p5}}></div>
-        </div>
-        <div className="flex justify-between items-center">
-          <p>{s6}</p>
-          <p className="text-green-400 font-normal">{p6}</p>
-        </div>
-        <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
-          <div className="bg-gradient-to-r from-green-400 to-emerald-600 h-2 transition-all rounded-full duration-1000 ease-out" style={{width:p6}}></div>
-        </div>
+        {[s1, s2, s3, s4, s5, s6].map((skill, index) => {
+          const percent = [p1, p2, p3, p4, p5, p6][index];
+          return (
+            <React.Fragment key={index}>
+              <div className="flex justify-between items-center">
+                <p>{skill}</p>
+                <p className="text-green-400 font-normal">{percent}</p>
+              </div>
+              <div className="w-full bg-gray-700 rounded-full h-2 mx-auto my-2">
+                <div
+                  className={`bg-gradient-to-r from-green-400 to-emerald-600 h-2 rounded-full ${progressClass}`}
+                  style={{ width: animate ? percent : "0%" }}
+                ></div>
+              </div>
+            </React.Fragment>
+          );
+        })}
       </div>
     </div>
   );
