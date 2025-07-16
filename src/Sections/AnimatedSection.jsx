@@ -8,7 +8,7 @@ const AnimatedSection = ({ children }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (ref.current) observer.observe(ref.current);

@@ -23,7 +23,7 @@
 
 
 .section {
-  @apply text-white min-h-screen bg-black flex px-4;
+  @apply text-white bg-black flex flex-col px-4;
 }
 
 .underline {

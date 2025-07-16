@@ -18,7 +18,7 @@ function App() {
        <AnimatedSection><Hero /></AnimatedSection> 
        <AnimatedSection><About /></AnimatedSection> 
        <AnimatedSection><Skills /></AnimatedSection> 
-       <AnimatedSection><Projects /></AnimatedSection> 
+       <AnimatedSection><Projects /></AnimatedSection>
        <AnimatedSection><Contact /></AnimatedSection> 
         
         
