@@ -78,7 +78,7 @@ const Projects = () => {
             t4="Reactjs"
             t5="Figma"
             code="https://github.com/Kanikagarwal/Secret"
-            demo="https://secret-one-taupe.vercel.app/"
+            demo="https://secret-murex.vercel.app/"
           />
           <Project
             name="PlanIt"
