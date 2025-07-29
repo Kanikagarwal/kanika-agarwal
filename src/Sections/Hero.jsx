@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
      
-      <section id="home" className="section items-center flex-col justify-center">
+      <section id="home" className="section items-center flex-col justify-center pt-20">
         <h1 className="name text-7xl md:text-7xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 text-center mt-6">
           Kanika Agarwal
         </h1>

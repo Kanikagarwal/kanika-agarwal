@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-      <main>
         <Navbar/>
+      <main>
        <AnimatedSection><Hero /></AnimatedSection> 
        <AnimatedSection><About /></AnimatedSection> 
        <AnimatedSection><Skills /></AnimatedSection> 
