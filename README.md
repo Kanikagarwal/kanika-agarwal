@@ -54,7 +54,7 @@ To run this project locally:
 
 ```bash
 git clone https://github.com/Kanikagarwal/kanika-agarwal.git
-cd your-portfolio-repo
+cd kanika-agarwal
 npm install
 npm run dev
 
