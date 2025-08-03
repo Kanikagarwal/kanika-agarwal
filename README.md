@@ -31,9 +31,17 @@ This portfolio showcases my projects, skills, and journey as a developer, built 
 
 ---
 
+## 📱 Live Preview
+
+![Desktop Preview](./screenshots/Screenshot%202025-08-03%20235017.png)
+
+---
+
 ## 📬 Contact
 
 - 💼 Linkedin:[linkedin.com/in/kanika-agarwal-b372a6278](https://www.linkedin.com/in/kanika-agarwal-b372a6278)
+
+---
 
 ## 📦 Getting Started
 
