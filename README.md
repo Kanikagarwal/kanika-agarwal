@@ -33,7 +33,7 @@ This portfolio showcases my projects, skills, and journey as a developer, built 
 
 ## 📬 Contact
 
-- 💼 Linkedin:[linkedin.com/in/kanika-agarwal-b372a6278]((https://www.linkedin.com/in/kanika-agarwal-b372a6278))
+- 💼 Linkedin:[linkedin.com/in/kanika-agarwal-b372a6278](https://www.linkedin.com/in/kanika-agarwal-b372a6278)
 
 ## 📦 Getting Started
 
