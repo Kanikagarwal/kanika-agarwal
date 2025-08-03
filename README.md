@@ -33,7 +33,11 @@ This portfolio showcases my projects, skills, and journey as a developer, built 
 
 ## 📱 Live Preview
 
-![Desktop Preview](./screenshots/Screenshot%202025-08-03%20235017.png)
+![Desktop Preview](./ss/1.png)
+![Desktop Preview](./ss/2.png)
+![Desktop Preview](./ss/3.png)
+![Desktop Preview](./ss/4.png)
+![Desktop Preview](./ss/5.png)
 
 ---
 
