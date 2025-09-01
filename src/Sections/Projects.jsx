@@ -41,7 +41,7 @@ const Projects = () => {
             t4="Socket.io"
             t5="Reactjs"
             code="https://github.com/Kanikagarwal/snappy"
-            demo="https://github.com/Kanikagarwal/snappy"
+            demo="https://snappy-mga7.vercel.app/"
           />
           <Project
             name="Daily Journal"
