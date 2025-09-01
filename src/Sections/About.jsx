@@ -11,12 +11,12 @@ const About = () => {
           <div className="space-y-6">
             <div className="para">
               I'm a passionate AI undergraduate with a strong foundation in
-              frontend development and a deep love for data structures and
+              web development and a deep love for data structures and
               algorithms. My journey in technology is driven by curiosity and
               the desire to create meaningful digital experiences.
             </div>
             <div className="para">
-              When I'm not coding, you'll find me exploring the latest AI
+              When I'm not coding, you'll find me exploring the latest
               research, solving algorithmic challenges, or experimenting with
               new web technologies. I believe in the power of clean code and
               intuitive design to solve real-world problems.
@@ -37,8 +37,8 @@ const About = () => {
             />
             <Domain
               icon={`fa-solid fa-brain`}
-              name="AI & Machine Learning"
-              des="Exploring artificial intelligence concepts and their practical applications in technology."
+              name="Backend Development"
+              des="Exploring server-side programming, databases, APIs, and the technologies that power modern web applications."
             />
             <Domain
               icon={`fa-solid fa-bolt`}

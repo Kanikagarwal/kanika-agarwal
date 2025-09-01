@@ -15,8 +15,8 @@ function Skills() {
           <Technology
             name="Web Development"
             s1="Javascript"
-            s2="Bootstrap"
-            s3="HTML/CSS"
+            s2="MongoDB"
+            s3="Express.js"
             s4="Tailwind CSS"
             s5="React"
             s6="Node.js"
@@ -35,7 +35,7 @@ function Skills() {
             s4="Data Structures"
             s5="Algorithm"
             s6="Problem Solving"
-            p1="50%"
+            p1="40%"
             p2="80%"
             p3="60%"
             p4="88%"
@@ -43,7 +43,7 @@ function Skills() {
             p6="90%"
           />
           <Technology
-            name="AI & Tools"
+            name="Tools"
             s1="VS Code"
             s2="IntelliJ"
             s3="Postman"

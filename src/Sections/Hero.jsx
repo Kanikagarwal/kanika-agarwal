@@ -12,7 +12,7 @@ const Hero = () => {
         </h1>
         <div className="underline w-30"></div>
         <p className="text-2xl md:text-2xl sm:text-lg mt-2 text-center text-gray-300 font-normal">
-          Frontend Developer • DSA Enthusiast • AI Undergraduate
+          Web Developer • DSA Enthusiast • AI Undergraduate
         </p>
         <p className="mt-8 max-w-2xl text-center text-gray-400 text-lg">
           Crafting beautiful, efficient web experiences while exploring the
@@ -40,7 +40,10 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/kanika-agarwal-b372a6278/" target="_blank" className="icon" title="LinkedIn">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:aanika6510@gmail.com" target="_blank" className="icon" title="Email me">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aanika6510@gmail.com" 
+   target="_blank" 
+   className="icon" 
+   title="Email me">
             <i className="fas fa-envelope"></i>
           </a>
           <a href="/Resume.pdf" download="Kanika_Agarwal_Resume.pdf" className="icon" title="Resume">
