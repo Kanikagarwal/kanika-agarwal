@@ -43,7 +43,7 @@ const Navbar = () => {
 
           {/* Hamburger (show below md) */}
           <button
-            className="md:hidden text-green-400 ml-4"
+            className="md:hidden text-green-400 ml-4 absolute top-6 right-8 z-50"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
@@ -74,17 +74,17 @@ const Navbar = () => {
 
       {/* Slide-in mobile menu */}
       <div
-        className={`md:hidden fixed top-10 right-0 w-1/4 h-screen bg-black/90 backdrop-blur-md text-white px-4 py-8 transition-transform duration-300 z-40 transform ${
+        className={`md:hidden fixed top-10 right-0 w-32 text-center  h-screen bg-black/90 backdrop-blur-md text-white  transition-transform duration-300 z-40 transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="flex flex-col gap-6 text-sm font-medium">
-          <li>
+        <ul className="flex flex-col gap-6 text-sm font-medium bg-green-900">
+          <li className='border-b border-gray-400 pb-4 mt-10'>
             <a href="#home" className="link" onClick={() => setMenuOpen(false)}>
               Home
             </a>
           </li>
-          <li>
+          <li className='border-b border-gray-400 pb-4 '>
             <a
               href="#about"
               className="link"
@@ -93,7 +93,7 @@ const Navbar = () => {
               About
             </a>
           </li>
-          <li>
+          <li className='border-b border-gray-400 pb-4'>
             <a
               href="#skills"
               className="link"
@@ -102,7 +102,7 @@ const Navbar = () => {
               Skills
             </a>
           </li>
-          <li>
+          <li className='border-b border-gray-400 pb-4'>
             <a
               href="#projects"
               className="link"
@@ -111,7 +111,7 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-          <li>
+          <li className='border-b border-gray-400 pb-4'>
             <a
               href="#contact"
               className="link"
