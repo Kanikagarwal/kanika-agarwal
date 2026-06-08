@@ -6,6 +6,8 @@ import Snappy from "../assets/Images/Snappy.png";
 import Plan from "../assets/Images/Plan.png";
 import DJ from "../assets/Images/DJ.png";
 import Secret from "../assets/Images/Secret.png";
+import Imagify from "../assets/Images/Imagify.png";
+import Fundflow from "../assets/Images/Fundflow.png";
 const Projects = () => {
   return (
     <section id="projects" className="section flex-col py-20 px-8 mx-auto max-w-6xl">
@@ -18,17 +20,16 @@ const Projects = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-8 mt-6">
           <Project
-            name="Chess"
-            img={ChessImage}
-            des="A real-time multiplayer chess web app using Socket.io for seamless two-player gameplay and live
- move synchronization."
-            t1="Node.js"
+            name="FundFlow"
+            img={Fundflow}
+            des="A dynamic to-do list app that displays the current date and lets users manage tasks by category."
+            t1="MongoDB"
             t2="Express.js"
-            t3="MongoDB"
-            t4="Socket.io"
-            t5="Chess.js"
-            code="https://github.com/Kanikagarwal/chess"
-            demo="https://chess-yem8.onrender.com/"
+            t3="Tailwind CSS"
+            t4="Nodejs"
+            t5="Reactjs"
+            code="https://github.com/Kanikagarwal/crowdFunding"
+            demo="https://crowd-funding-puce-kappa.vercel.app/"
           />
           <Project
             name="Snappy"
@@ -44,17 +45,16 @@ const Projects = () => {
             demo="https://snappy-mga7.vercel.app/"
           />
           <Project
-            name="Daily Journal"
-            img={DJ}
-            des="Designed and developed a dynamic blog website with user authentication, rich text content creation, and
- responsive UI, enabling seamless content publishing and engagement."
+            name="Imagify"
+            img={Imagify}
+            des="An AI image Generating platform that allows users to create unique images based on text prompts using ClipDrop API."
             t1="Node.js"
             t2="Express.js"
             t3="MongoDB"
-            t4="EJS"
-            t5="Bootstrap"
-            code="https://github.com/Kanikagarwal/daily_journal"
-            demo="https://github.com/Kanikagarwal/daily_journal"
+            t4="Reactjs"
+            t5="Tailwind CSS"
+            code="https://github.com/Kanikagarwal/imagify"
+            demo="https://imagify-1-a41y.onrender.com/"
           />
           <Project
             name="Solar System"
@@ -81,17 +81,19 @@ const Projects = () => {
             demo="https://secret-murex.vercel.app/"
           />
           <Project
-            name="PlanIt"
-            img={Plan}
-            des="A dynamic to-do list app that displays the current date and lets users manage tasks by category."
-            t1="HTML"
-            t2="CSS"
-            t3="Javascript"
-            t4="MongoDB"
-            t5="Nodejs"
-            code="https://github.com/Kanikagarwal/PlanIt"
-            demo="https://github.com/Kanikagarwal/PlanIt"
+            name="Chess"
+            img={ChessImage}
+            des="A real-time multiplayer chess web app using Socket.io for seamless two-player gameplay and live
+ move synchronization."
+            t1="Node.js"
+            t2="Express.js"
+            t3="MongoDB"
+            t4="Socket.io"
+            t5="Chess.js"
+            code="https://github.com/Kanikagarwal/chess"
+            demo="https://chess-yem8.onrender.com/"
           />
+          
         </div>
         <div className="text-center mx-auto my-6">
           <a href="https://github.com/Kanikagarwal?tab=repositories" target="_blank" className="text-gray-500 hover:text-green-500">
