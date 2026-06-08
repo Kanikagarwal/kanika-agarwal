@@ -46,7 +46,7 @@ const Hero = () => {
    title="Email me">
             <i className="fas fa-envelope"></i>
           </a>
-          <a href="/Resume.pdf" download="Kanika_Agarwal_Resume.pdf" className="icon" title="Resume">
+          <a href="/Kanika_Agarwal.pdf" download="Kanika_Agarwal_Resume.pdf" className="icon" title="Resume">
             <i className="fas fa-download"></i>
           </a>
         </div>
