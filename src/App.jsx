@@ -8,15 +8,19 @@ import Contact from "./Sections/Contact";
 import Footer from "./Sections/Footer";
 import AnimatedSection from "./Sections/AnimatedSection";
 import Navbar from "./Sections/Navbar";
+import Expierence from "./Sections/Expierence";
+import CustomCursor from "./Components/CustomCursor";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-        <Navbar/>
       <main>
+      <CustomCursor />
+        <Navbar/>
        <AnimatedSection><Hero /></AnimatedSection> 
        <AnimatedSection><About /></AnimatedSection> 
+       <AnimatedSection><Expierence /></AnimatedSection> 
        <AnimatedSection><Skills /></AnimatedSection> 
        <AnimatedSection><Projects /></AnimatedSection>
        <AnimatedSection><Contact /></AnimatedSection> 
