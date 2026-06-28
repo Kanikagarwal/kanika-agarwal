@@ -230,7 +230,7 @@ const Hero = () => {
                 className="flex justify-center sm:justify-start gap-8 mt-8 pt-6 border-t border-emerald-500/10"
               >
                 {[
-                  { num: "15+", label: "Projects" },
+                  { num: "5+", label: "Projects" },
                   { num: "3+", label: "Years Coding" },
                   { num: "6", label: "Core Skills" },
                 ].map((st) => (
